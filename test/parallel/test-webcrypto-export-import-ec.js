@@ -371,7 +371,7 @@ async function testImportRaw({ name, publicUsages }, namedCurve) {
         tests.push(testImportJwk(vector, namedCurve, extractable));
       };
       tests.push(testImportRaw(vector, namedCurve));
-    };
+    }
   };
 
   await Promise.all(tests);
