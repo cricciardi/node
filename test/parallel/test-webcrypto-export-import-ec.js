@@ -369,7 +369,7 @@ async function testImportRaw({ name, publicUsages }, namedCurve) {
         tests.push(testImportSpki(vector, namedCurve, extractable));
         tests.push(testImportPkcs8(vector, namedCurve, extractable));
         tests.push(testImportJwk(vector, namedCurve, extractable));
-      };
+      }
       tests.push(testImportRaw(vector, namedCurve));
     }
   }
