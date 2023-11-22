@@ -372,7 +372,7 @@ async function testImportRaw({ name, publicUsages }, namedCurve) {
       };
       tests.push(testImportRaw(vector, namedCurve));
     }
-  };
+  }
 
   await Promise.all(tests);
 })().then(common.mustCall());
